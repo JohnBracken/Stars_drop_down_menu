@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <header>
+         <h1>Star List</h1>
+     </header>
+   </head>
+   <body>
+      <label for="selectStar">Choose a star:</label>
+      <br>
+      <select id="selectStar" onchange="star_pick(stars)">
+          <option>Choose a star</option>
+      </select>        
+      <p id="starResult"></p>
+      <label for="selectProperty">Choose a star property:</label>
+      <br>
+      <select id="selectProperty" onchange="property_pick(stars)">
+          <option>Choose a star property</option>
+      </select>        
+      <p id="starProperty"></p>
+      <script src="parse_json.js"></script>
+   </body>
+</html>
